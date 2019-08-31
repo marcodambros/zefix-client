@@ -21,5 +21,6 @@ usage: zefix-client
  -p,--password <arg>      Zefix API password
  -s,--search <arg>        Search company by name
  -t,--publication <arg>   Get the text of the SHAB publication given the SHAB id
+ -u,--user <arg>          Zefix API username
 ```
 
