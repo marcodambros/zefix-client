@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    compile group: 'javax.xml.ws', name: 'jaxws-api', version: '2.3.1'
+    compile group: 'org.glassfish.main.javaee-api', name: 'javax.jws', version: '3.1.2.2'
+    compile group: 'com.sun.xml.ws', name: 'jaxws-rt', version: '2.3.2'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.26'
+	compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
+}
+
+application {
+    mainClassName = "ch.usi.nrp77.ZefixClient"
+}
